@@ -1,32 +1,25 @@
-from gerenciar_tarefas import gerenciar_tarefas
+from controlar_tarefas import ControladorTarefas
 
-# cria uma instância do gerenciador
-gerenciador = gerenciar_tarefas()
+# cria uma instância do controlador
+controlador = ControladorTarefas()
 
 # menu simples para testar
 while True:
-    print("\nMenu:")
-    print("1. Adicionar tarefa")
-    print("2. Listar tarefas")
-    print("3. Listar tarefas por status")
-    print("4. Alterar status de uma tarefa")
-    print("5. Excluir tarefa")
-    print("6. Sair")
-
-    opcao = input("Escolha uma opção: ")
+    print("\nMENU\n1.Adicionar\n2.Listar\n3.Listar por status\n4.Alterar\n5.Excluir\n6.Sair")
+    opcao = input("\nEscolha uma opção: ")
 
     if opcao == "1":
-        gerenciador.adicionar_tarefa()
+        controlador.adicionar_tarefa()
     elif opcao == "2":
-        gerenciador.listar_tarefas()
+        controlador.listar_tarefas()
     elif opcao == "3":
-        gerenciador.listar_por_status()
+        controlador.listar_por_status()
     elif opcao == "4":
-        gerenciador.alterar_status()
+        controlador.alterar_status()
     elif opcao == "5":
-        gerenciador.excluir_tarefa()
+        controlador.excluir_tarefa()
     elif opcao == "6":
-        print("Saindo...")
+        print("Obrigado por usar o sistema!")
         break
     else:
-        print("Opção inválida.")
+        print("Opção inválida, escolha um numero entre 1 e 6.")
