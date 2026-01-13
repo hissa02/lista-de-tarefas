@@ -1,4 +1,4 @@
-from controlar_tarefas import ControladorTarefas
+from controlador.controlar_tarefas import ControladorTarefas
 
 # cria uma instância do controlador
 controlador = ControladorTarefas()

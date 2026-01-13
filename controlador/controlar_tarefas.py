@@ -1,4 +1,4 @@
-from tarefa import Tarefa, Disponivel, Fazendo, Feito
+from classe.tarefa import Tarefa, Disponivel, Fazendo, Feito
 
 class ControladorTarefas:
 #aplicando o padrão singleton
