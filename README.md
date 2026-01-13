@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Esse projeto é um aplicativo  feito em Python que serve para gerenciar tarefas.
+Esse projeto é um aplicativo feito em Python que serve para gerenciar tarefas.
 Com ele é possível adicionar, listar, excluir e mudar o status das tarefas.
 O projeto foi feito para a avaliação 3 de Engenharia de Software.
 
@@ -27,11 +27,11 @@ Os status possíveis são: **Disponível**, **Fazendo** e **Feito**.
 * Usado na classe `ControladorTarefas`.
 * Garante que só exista um controlador que gerencia todas as tarefas.
 
-**Strategy**
+**Factory**
 
-* Usado nas classes `Disponivel`, `Fazendo` e `Feito`.
-* Cada uma define um tipo de status.
-* A classe `Tarefa` usa essas estratégias para definir e mudar o status sem precisar alterar o código principal.
+* Usado na classe `FabricaStatus`.
+* Cria o status da tarefa de acordo com a escolha do usuário.
+* Substitui vários `if` repetidos e deixa o código mais organizado e fácil de manter.
 
 ---
 
